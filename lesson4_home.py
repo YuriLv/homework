@@ -37,7 +37,7 @@ elif on>cap:
 elif on+wait > cap:
     print("Can pick up", cap-on, "and", on +wait-cap, "are left")
 else:
-    print("No free space, sorry")
+    print("No free seats, sorry")
 
 print("3. -------------------------------------------------------")
 ''' Create a function which answers the question "Are you playing banjo?".
@@ -56,6 +56,8 @@ if name[0] == 'r' or name[0] == 'R':
 
 else:
     print(name+" does not plays banjo")
+
+
 
 print("4. -------------------------------------------------------")
 
