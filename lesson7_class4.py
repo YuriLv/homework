@@ -13,7 +13,6 @@ screen = pygame.display.set_mode([800, 600])
 # This sets the name of the window
 pygame.display.set_caption('Fly')
 
-
 clock = pygame.time.Clock()
 
 # обновляємо екран
@@ -50,7 +49,6 @@ while not done:
 
 
         screen.blit(player_image, [x, y])
-
 
 
 
