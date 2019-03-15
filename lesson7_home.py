@@ -7,6 +7,13 @@ summation(2) -> 3
 summation(8) -> 36
 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8'''
 
+n=8
+# n=int(input("write the number n:"))
+s=0
+for i in range(n+1):
+    s=s+i
+print('Total sum of n is:',s)
+
 
 
 print('2. -------------------------------------------------------------------------')
@@ -22,9 +29,15 @@ def list_animals(animals):
         list += str(i + 1) + '. ' + animals[i] + '\n'
     return list
 '''
+animals = [ 'dog', 'cat', 'elephant' ]
 
+def list_animals(animals):
+    list = ''
+    for i in range(len(animals)):
+        list += str(i + 1) + '. ' + animals[i] + '\n'
+    return list
 
-
+print(list_animals(animals))
 
 
 print('3. -------------------------------------------------------------------------')
@@ -34,3 +47,10 @@ double_char("Hello World") ==> "HHeelllloo  WWoorrlldd"
 double_char("1234!_ ") ==> "11223344!!__  "
 def double_char(s):
     pass'''
+
+s='String'
+tex=s
+for i in range(len(s)):
+    tex=tex.replace(s[i],s[i]*2)
+
+print(tex)
