@@ -28,7 +28,7 @@ print("is_uppercase"+ "("+ text + ")" + " == ", is_uppercase(text))
 
 text= "HELLO I AM DONALD"
 print("is_uppercase"+ "("+ text + ")" + " == ", is_uppercase(text))
-
+text = "ACSKLDFJSQSKLDFJSKLDFJ"
 print("is_uppercase"+ "("+ text + ")" + " == ", is_uppercase(text))
 
 # text= input("Input text:")
@@ -40,10 +40,11 @@ print('''2. ----------------------------------------------------''')
  Help him sort a list (ArrayList in java) full of textbooks by subject, so he can study before the test.
 The sorting should NOT be case sensitive
 '''
+print("Java????  Not clear what should to do")
 a=[]
 a.sort()
 print(a)
-print("Java????  Not clear what should to do")
+
 
 
 print('''3. ---------------------------------------------------- ''')
@@ -54,3 +55,30 @@ Write a function, shortenToDate, that takes the Website date/time in its origina
 Assume shortenToDate's input will always be a string, e.g. "Friday May 2, 7pm". Assume shortenToDate's output will be the shortened string, e.g., "Friday May 2".
 '''
 
+
+
+
+def day(d):
+    i = d.index(",")
+    print(d[0:i])
+
+d = "Friday May 2, 7pm"
+day(d)
+
+
+#
+# i=0
+# while i<len(date):
+#
+#     if date[i] == ",":
+#         print(date[0:i])
+#         break
+#     i=i+1
+#
+# for i in range(len(date)):
+#     if date[i] ==",":
+#         print(date[0:i])
+#         break
+#
+# i= date.index(",")
+# print(date[0:i])

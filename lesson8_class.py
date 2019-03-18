@@ -41,7 +41,7 @@ class Square(Figure):
 triang= Figure("blue","triangle")
 rectan =Rectangle('white','rectangle',4,8 )
 squar= Square('red', 'square',5)
-# a=Figure(5)
+
 
 triang.get_color()
 triang.info()
@@ -49,6 +49,29 @@ rectan.info()
 rectan.square()
 squar.info()
 squar.square()
+
+
+
+
+
+
+class Vector:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    # def __str__(self):
+    #     c =str((self.a, self.b))
+    #     return c
+    def __add__(self, other):
+        k= Vector(self.a + other.a, self.b + other.b)
+        return k
+
+
+
+v1 = Vector(2, 10)
+v2 = Vector(5, -2)
+print(v1 + v2)
 
 
 
