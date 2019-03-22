@@ -17,8 +17,8 @@ class Ball:
         self.type=type
 
 
-    def ball_type(self,type='regular'):
-        
+    def ball_type(self):
+
         print(self.type)
 
 
