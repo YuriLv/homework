@@ -13,10 +13,14 @@ ball2.ball_type  #=> "super"
 
 class Ball:
 
-
-    def ball_type(self,type=None):
-        print("regular")
+    def __init__(self,type='regular'):
         self.type=type
+
+
+    def ball_type(self,type='regular'):
+        
+        print(self.type)
+
 
 
 
@@ -37,9 +41,9 @@ class Ball:
 
 
 
-# ball1= Ball("super")
+ball1= Ball("super")
 ball2 =Ball()
-# ball1.ball_type()
+ball1.ball_type()
 ball2.ball_type()
 #
 # print('2. ----------------------------------------------------')

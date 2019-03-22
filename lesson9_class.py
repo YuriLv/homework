@@ -38,10 +38,10 @@ def age():
     except ValueError:
         print("not valid number. Should be only digits")
 
-    except Exception:
-        print("Minus input ERROR")
+    except Exception as e:
+        print(e)
     except  Exception as e:
-        print("Your age is too high, input correct age")
+        print(e)
 
     return
 
